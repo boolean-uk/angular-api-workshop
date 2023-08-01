@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class StarwarsService {
+export class StarWarsService {
   constructor(private readonly http: HttpClient) {}
 }
