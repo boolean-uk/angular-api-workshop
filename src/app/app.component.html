@@ -1,4 +1,7 @@
-<h1>Starwars roster</h1>
-<ul>
-  <li>Luke Skywalker</li>
+<h1>StarWars roster</h1>
+<div *ngIf="!characters">Loading...</div>
+<ul *ngIf="characters">
+  <li *ngFor="let c of characters">
+    {{ c.name | json }}
+  </li>
 </ul>
